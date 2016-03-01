@@ -1,0 +1,12 @@
+{   
+	"mainInfo": {
+		"Tel": "88005553535",
+    "Email": {"dbellkoff@live.com": "mailto:dbellkoff@live.com"},
+    "GitHub": {"dbellkoff": "https://github.com/dbellkoff"},
+		"LinkedIn": {"Danil Belkov": "https://www.linkedin.com/in/dbellkoff"},
+		"Skype": {"bell.inc": "skype:bell.inc?add"},
+		"Location": "Yekaterinburg, Russia",
+    "Languages": "Enasdsadasdsdsadasdasdasdglish: pre-intermediate(tech docs reading), Russan: native"
+  },
+  "mainText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit laborum quidem iusto quasi, fugit alias amet incidunt magni eaque porro obcaecati ad consectetur eum sint voluptates quam sequi aliquid similique!"
+}

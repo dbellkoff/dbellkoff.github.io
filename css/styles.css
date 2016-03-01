@@ -1,0 +1,34 @@
+/* line 1, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+h3 {
+  color: #6F5493; }
+
+/* line 5, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+h1, h2 {
+  margin-top: 0; }
+
+/* line 9, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+p {
+  padding-left: 0 !important; }
+
+/* line 17, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+header h2 {
+  color: gray; }
+
+/* line 21, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+header .headerButtons button, header .headerButtons a {
+  margin-top: 3%;
+  background-color: lightgray !important; }
+
+/* line 30, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+.main {
+  margin-top: 1%; }
+
+/* line 35, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+section header {
+  color: gray; }
+
+/* line 41, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+footer a {
+  color: #333; }
+
+/*# sourceMappingURL=styles.css.map */

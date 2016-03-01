@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+  /* line 2, /Users/bda/Documents/Projects/dbellkoff.github.io/css/media.scss */
+  h1, h2 {
+    text-align: center; }
+  /* line 5, /Users/bda/Documents/Projects/dbellkoff.github.io/css/media.scss */
+  h3 {
+    text-align: left !important; }
+  /* line 8, /Users/bda/Documents/Projects/dbellkoff.github.io/css/media.scss */
+  .main {
+    margin-top: 5%; } }
+
+@media (min-width: 768px) {
+  /* line 13, /Users/bda/Documents/Projects/dbellkoff.github.io/css/media.scss */
+  .btn {
+    margin-top: 1%; } }
+
+/*# sourceMappingURL=media.css.map */

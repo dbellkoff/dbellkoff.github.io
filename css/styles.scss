@@ -1,0 +1,44 @@
+h3 {
+	color: #6F5493;
+}
+
+h1, h2 {
+	margin-top: 0;
+}
+
+p {
+	padding-left: 0 !important;
+}
+
+header {
+	h1 {
+		
+	}
+	h2 {
+		color: gray;
+	}
+	.headerButtons {
+		button, a {
+//			width: 100px;
+			margin-top: 3%;
+			background-color: lightgray !important;
+		}
+	}
+	
+}
+	
+.main {
+		margin-top: 1%;	
+}
+
+section {
+	header {
+		color: gray;	
+	}
+}
+
+footer {
+	a {
+		color: #333;
+	}
+}
