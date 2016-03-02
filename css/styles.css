@@ -1,34 +1,46 @@
-/* line 1, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+@media print {
+  /* line 2, /Users/bda/Documents/Projects/dbellkoff.github.io/dev/src/css/styles.scss */
+  .headerButtons {
+    display: none; }
+  /* line 5, /Users/bda/Documents/Projects/dbellkoff.github.io/dev/src/css/styles.scss */
+  footer {
+    display: none; } }
+
+/* line 10, /Users/bda/Documents/Projects/dbellkoff.github.io/dev/src/css/styles.scss */
 h3 {
   color: #6F5493; }
 
-/* line 5, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+/* line 14, /Users/bda/Documents/Projects/dbellkoff.github.io/dev/src/css/styles.scss */
 h1, h2 {
   margin-top: 0; }
 
-/* line 9, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+/* line 18, /Users/bda/Documents/Projects/dbellkoff.github.io/dev/src/css/styles.scss */
 p {
   padding-left: 0 !important; }
 
-/* line 17, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+/* line 26, /Users/bda/Documents/Projects/dbellkoff.github.io/dev/src/css/styles.scss */
 header h2 {
   color: gray; }
 
-/* line 21, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+/* line 30, /Users/bda/Documents/Projects/dbellkoff.github.io/dev/src/css/styles.scss */
 header .headerButtons button, header .headerButtons a {
   margin-top: 3%;
   background-color: lightgray !important; }
 
-/* line 30, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+/* line 39, /Users/bda/Documents/Projects/dbellkoff.github.io/dev/src/css/styles.scss */
 .main {
   margin-top: 1%; }
 
-/* line 35, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+/* line 44, /Users/bda/Documents/Projects/dbellkoff.github.io/dev/src/css/styles.scss */
 section header {
   color: gray; }
 
-/* line 41, /Users/bda/Documents/Projects/dbellkoff.github.io/css/styles.scss */
+/* line 50, /Users/bda/Documents/Projects/dbellkoff.github.io/dev/src/css/styles.scss */
 footer a {
   color: #333; }
+
+/* line 55, /Users/bda/Documents/Projects/dbellkoff.github.io/dev/src/css/styles.scss */
+.worksContent > .row {
+  margin-top: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

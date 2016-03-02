@@ -1,0 +1,19 @@
+{
+  "name": "dbellkoff.github.io",
+  "homepage": "https://github.com/dbellkoff/dbellkoff.github.io",
+  "authors": [
+    "dbellkoff <dbellkoff@live.com>"
+  ],
+  "description": "Site resume",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    
+  },
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}

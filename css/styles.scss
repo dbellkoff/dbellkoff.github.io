@@ -1,3 +1,12 @@
+@media print {
+	.headerButtons {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+}
+
 h3 {
 	color: #6F5493;
 }
@@ -41,4 +50,8 @@ footer {
 	a {
 		color: #333;
 	}
+}
+
+.worksContent > .row {
+	margin-top: 10px;
 }
