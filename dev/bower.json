@@ -10,10 +10,10 @@
     "node"
   ],
   "license": "MIT",
-  "devDependencies": {
-    
-  },
+  "devDependencies": {},
   "dependencies": {
-    "jquery": "^2.2.1"
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.5.0"
   }
 }

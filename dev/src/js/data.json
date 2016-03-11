@@ -1,13 +1,13 @@
 {   
 	
 	"mainContent": {
-		"Tel": "88005553535",
-    "Email": {"dbellkoff@live.com": "mailto:dbellkoff@live.com"},
+		"tel": "88005553535",
+    "email": {"dbellkoff@live.com": "mailto:dbellkoff@live.com"},
     "GitHub": {"dbellkoff": "https://github.com/dbellkoff"},
 		"LinkedIn": {"Danil Belkov": "https://www.linkedin.com/in/dbellkoff"},
-		"Skype": {"bell.inc": "skype:bell.inc?add"},
-		"Location": "Yekaterinburg, Russia",
-    "Languages": "English: pre-intermediate(tech docs reading), Russan: native"
+		"skype": {"bell.inc": "skype:bell.inc?add"},
+		"location": "Yekaterinburg, Russia",
+    "languages": "English: pre-intermediate(tech docs reading), Russan: native"
   },
 	
 	"coverText" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat corrupti repudiandae, consectetur quas facere consequuntur voluptatem earum obcaecati odit molestiae sapiente, ullam quos officia et tempora perspiciatis. Culpa, dignissimos, ad.",
