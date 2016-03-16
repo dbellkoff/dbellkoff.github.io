@@ -8,7 +8,8 @@ var gulp 				= require('gulp'),
 		runSequence = require('run-sequence'),
     util 				= require('gulp-util'),
 		minifyJSON	= require('gulp-json-minify')
-		htmlSrc 		= require('gulp-html-src');
+		htmlSrc 		= require('gulp-html-src'),
+		bowerFiles	=	require('gulp-main-bower-files');
 
 
 gulp.task('minjs', function() {
@@ -33,17 +34,6 @@ gulp.task('minjson', function() {
 		.on('error', util.log);
 })
 
-gulp.task('copy', function() {
-	return gulp.src(['../src/**/*' ,'!../src/**/*.+(jpg|png|js|*css*|html|json)'])
-		.pipe(gulp.dest('../build'))
-})
-
-gulp.task('copy:libs', function() {
-	return gulp.src('../src/**/*.html')
-		.pipe(htmlSrc({presets: 'script'}))
-		.pipe(gulp.dest('../build/js/libs/'))
-})
-
 gulp.task('minimg', function() {
 	return gulp.src('../src/**/*.+(jpg|png|svg|gif)')
 		.pipe(imagemin())
@@ -54,10 +44,38 @@ gulp.task('minimg', function() {
 
 
 /*
+		COPY
+*/
+gulp.task('copy:all', ['copy',], function (){
+	console.log('Building files');
+})
+
+gulp.task('copy', function() {
+	return gulp.src(['../src/**/*' ,'!../src/**/*.+(jpg|png|js|*css*|html|json)'])
+		.pipe(gulp.dest('../build'))
+})
+
+// ДОДЕЛАТЬ!
+//gulp.task('copy:lib', function() {
+//	return gulp.src('../src/**/*.html')
+//		.pipe(htmlSrc({presets: 'script'}))
+//		.pipe(gulp.dest('../build/js/libs/'))
+//})
+
+
+gulp.task('bower', function() {
+	return gulp.src('../bower.json')
+		.pipe(bowerFiles())
+		.pipe(gulp.dest('../build/test'))
+})
+
+
+
+/*
 		HTML
 */
 
-gulp.task('html:build', ['html:replace', 'html:build:min'], function (){
+gulp.task('html:build', ['html:replace+min'], function (){
 	console.log('Building files');
 })
 
@@ -72,18 +90,18 @@ gulp.task('html:min', function() {
 		.pipe(gulp.dest('../build/'))
 })
 //Minification in build folder
-gulp.task('html:build:min', function() {
-	return gulp.src('../build/**/*.html')
-
-		.pipe(gulp.dest('../build/'))
-})
+//gulp.task('html:build:min', function() {
+//	return gulp.src('../build/**/*.html')
+//
+//		.pipe(gulp.dest('../build/'))
+//})
 //Replace links
 gulp.task('html:replace', function() {
 	gulp.src('../src/**/*.html')
 		.pipe(replace(/(\.min)*\.js/g, '.min.js'))
 		.pipe(replace(/(\.min)*\.css/g, '.min.css'))
-		.pipe(replace(/(\.\.\/bower_components)\/(.*)[/](.*(.js))/g, 'js/libs/$3'))
-		.pipe(replace(/(\.\.\/bower_components)\/(.*)[/](.*(.css))/g, 'css/libs/$3'))
+		.pipe(replace(/(\.\.\/bower_components)\/(.*)[/](.*(.js))/g, 'js/lib/$3'))
+		.pipe(replace(/(\.\.\/bower_components)\/(.*)[/](.*(.css))/g, 'css/lib/$3'))
 		.pipe(gulp.dest('../build/'));
 });
 //temp, working
