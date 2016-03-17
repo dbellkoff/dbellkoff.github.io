@@ -114,6 +114,7 @@ gulp.task('css:build', function(callback) {
 
 gulp.task('css:min', function() {
   gulp.src(['../src/**/*.css', '!../src/**/*.min*'])
+		.pipe(replace('/*!', '/*'))
 		.pipe(csso())
 		.pipe(rename({
 			suffix: '.min',

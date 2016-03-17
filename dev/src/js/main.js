@@ -6,7 +6,7 @@ $(document).ready(function() {
 //		var key11 = key1.replace(/\s/g,"_")
 		$("." + key).append('<header id="' + id1 + '">' + key1 + '</header>');
 		$("." + key +">header").wrap('<div class="row"></div>');
-		$("." + key + ">div.row>header").addClass("col-xs-5 col-sm-2 col-sm-offset-2 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2 text-right");
+		$("." + key + ">div.row>header").addClass("col-xs-5 col-sm-2 col-sm-offset-2 text-right");
 		console.log ("add header " + key1)
 	}
 	//Функция добавления параграфа
@@ -47,7 +47,7 @@ $(document).ready(function() {
 			}
 			else if (key === "coverText") {
 				$("." + key).append("<p>" + value + "</p>");
-				$("." + key + ">p").addClass("col-xs-12 col-sm-5 col-sm-offset-4 col-md-5 col-md-offset-4 col-lg-5 col-lg-offset-4")
+				$("." + key + ">p").addClass("col-xs-12 col-sm-5 col-sm-offset-4")
 			}
 			else if (key === "skillsContent") {
 				$.each(value, function(key1, value1) {

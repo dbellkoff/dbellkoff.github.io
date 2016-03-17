@@ -1,0 +1,27 @@
+@media(max-width:767px) {
+	h1, h2 {
+		text-align: center;
+	}
+	h3 {
+		text-align: left !important;
+	}
+	.main {
+		margin-top: 5%;	
+	}
+}
+
+@media(min-width:768px) {
+	.btn {
+		margin-top: 1%;
+	}
+}
+
+
+@media print {
+	.headerButtons {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+}

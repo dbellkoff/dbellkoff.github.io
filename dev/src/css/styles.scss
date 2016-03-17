@@ -1,11 +1,5 @@
-@media print {
-	.headerButtons {
-		display: none;
-	}
-	footer {
-		display: none;
-	}
-}
+@import 'lib/_bootstrap.scss';
+@import 'lib/font-awesome/_font-awesome.scss';
 
 h3 {
 	color: #6F5493;
@@ -28,12 +22,11 @@ header {
 	}
 	.headerButtons {
 		button, a {
-//			width: 100px;
 			margin-top: 3%;
 			background-color: lightgray !important;
 		}
 	}
-	
+
 }
 	
 .main {
@@ -55,3 +48,5 @@ footer {
 .worksContent > .row {
 	margin-top: 10px;
 }
+
+@import '_media.scss';
